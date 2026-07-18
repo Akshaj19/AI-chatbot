@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyChat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>💬 MyChat</h1>
+      <div class="right">
+        <span id="model-badge" class="badge">connecting…</span>
+        <button id="new-chat" title="New chat">＋ New</button>
+      </div>
+    </header>
+
+    <main id="messages">
+      <div class="empty">
+        <h2>Ask me anything</h2>
+        <p>Your own Claude-like assistant. Type a message below to start.</p>
+      </div>
+    </main>
+
+    <footer>
+      <form id="chat-form">
+        <textarea id="input" rows="1" placeholder="Send a message… (Shift+Enter for new line)"></textarea>
+        <button id="send" type="submit">Send</button>
+      </form>
+      <p class="hint">Runs on any OpenAI-compatible model — Gemini, Groq, OpenAI, or local Ollama.</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

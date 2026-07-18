@@ -1,0 +1,18 @@
+# Render deployment blueprint.
+# When you connect this repo, Render auto-detects this file and sets everything up.
+services:
+  - type: web
+    name: mychat
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: BASE_URL
+        value: https://api.groq.com/openai/v1
+      - key: MODEL
+        value: llama-3.3-70b-versatile
+      # API_KEY is a secret — you set it in the Render dashboard, NOT here.
+      - key: API_KEY
+        sync: false
