@@ -20,7 +20,7 @@
 
 ## 🌐 Live Demo
 
-👉 **[https://your-app-name.onrender.com]([https://your-app-name.onrender.com](https://ai-chatbot-ni38.onrender.com/))**
+👉 **(https://ai-chatbot-ni38.onrender.com/)**
 
 > Replace the link above with your actual Render URL.
 > ⏳ Note: on Render's free tier the app sleeps after 15 min — the first load may take ~30–50 s to wake up, then it's fast.
